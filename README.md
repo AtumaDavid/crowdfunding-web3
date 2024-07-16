@@ -1,3 +1,9 @@
+- [Getting Started](#getting-started)
+- [Building the project](#building-the-project)
+- [Deploying Contracts](#deploying-contracts)
+- [Releasing Contracts](#releasing-contracts)
+- [Important Info](#important-info)
+
 ## Getting Started
 
 Create a project using this example:
@@ -6,10 +12,6 @@ Create a project using this example:
 npx thirdweb create --contract --template hardhat-javascript-starter
 npx thirdweb@latest create --contract
 ```
-
-You can start editing the page by modifying `contracts/Contract.sol`.
-
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
 
 ## Building the project
 
@@ -43,6 +45,10 @@ npm run release
 yarn release
 ```
 
-## Join our Discord!
+## Important Info
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+- msg: msg is a global variable in Solidity that holds details about the transaction that called the contract. It includes:
+  - msg.sender: The address of the sender (caller) of the transaction.
+  - msg.value: The amount of Ether (in wei) sent with the transaction.
+  - msg.data: The data payload (calldata) sent with the transaction.
+  - msg.sig: The first four bytes of msg.data, which is the function identifier.
