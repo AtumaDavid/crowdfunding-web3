@@ -4,6 +4,7 @@ Create a project using this example:
 
 ```bash
 npx thirdweb create --contract --template hardhat-javascript-starter
+npx thirdweb@latest create --contract
 ```
 
 You can start editing the page by modifying `contracts/Contract.sol`.
